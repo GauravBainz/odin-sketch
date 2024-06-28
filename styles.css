@@ -1,0 +1,100 @@
+.title {
+    font-size: 30px;
+    padding: 30px;
+    font-family: 'Times New Roman';
+}
+
+.board {
+    width: 500px;
+    height: 500px;
+    display: grid;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.buttons button{
+    font-size: 16px;
+    font-style: italic;
+    padding: 10px 20px;
+    border-radius: 0px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease, color 0.3s ease;
+}
+
+.Black:hover {
+    transform: scale(1.1);
+}
+
+.White:hover {
+    color: white;
+}
+
+.Grey:hover{
+    color: grey;
+}
+
+.Random:hover {
+    animation: colorChange 2s infinite;
+}
+
+.Reset:hover {
+    transform: scale(1.1);
+}
+
+.buttons {
+    padding-top: 20px;
+}
+
+.set-size  {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background-color: rgb(60, 143, 170);
+}
+
+@keyframes colorChange {
+    0% {color: #ff0000;} /* Red */
+    25% {color: #00ff00;} /* Green */
+    50% {color: #0000ff;} /* Blue */
+    75% {color: #ffff00;} /* Yellow */
+    100% {color: #ff00ff;} /* Magenta */
+}
+
+input[type="text"] {
+    border: 3px solid;
+    background-color: rgb(60, 143, 170);
+    font-size: 16px;
+    font-style: italic;
+    border: none;
+    border-bottom: 2px solid;
+    outline: none;
+    text-align: center;
+    padding-top: 10px;
+    width: 50%;
+}
+
+button.SetSize{
+    border: none;
+    color: black;
+    background: none;
+    font-size: 16px;
+}
